@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>This is service page</title>
+</head>
+<body>
+	
+	<h1>This is a service page which is provided by me...</h1>
+	<!-- Going to bring footer here  -->
+<!-- 	<footer id="hostTag" 
+	th:replace="footer::footer1('this is title','this is sub')"></footer> -->
+
+
+	<footer id="hostTag" 
+	th:replace="footer::footer1(${title},${subtitle})"></footer>
+
+</body>
+</html>
